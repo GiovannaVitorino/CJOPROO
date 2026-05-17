@@ -2,7 +2,6 @@
 #include <vector>
 //exemplo 07: enum com escopo
 
-
 using namespace std;
 
 enum class EstadoJogo{
@@ -44,7 +43,7 @@ void mostrarEstado(EstadoJogo estado){
             cout << "O jogo esta em andamento..." << endl;
             break;
         case EstadoJogo::Pausado:
-            cout << "O jogo está pausado." << endl;
+            cout << "O jogo estï¿½ pausado." << endl;
             break;
         case EstadoJogo::GameOver:
             cout << "Game Over!" << endl;

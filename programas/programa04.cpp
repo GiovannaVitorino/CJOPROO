@@ -4,8 +4,6 @@
 #include <algorithm>
 #include <vector>
 #include <sstream>
-//
-
 
 using namespace std;
 
@@ -27,7 +25,7 @@ int main(void) {
     Pokemon *ptrPokemon = new Pokemon;
 
     ptrPokemon->nome = "Pikachu";
-    ptrPokemon->tipo = "Elétrico";
+    ptrPokemon->tipo = "Eletrico";
     ptrPokemon->nivel = 1;
     ptrPokemon->hp = 1;
 
@@ -44,7 +42,7 @@ int main(void) {
 
     ptrPokemon->aumentaHP(50);
 
-    cout << "Olhe, o que está acontecendo? Seu Pokemon está brilhando!\n";
+    cout << "Olhe, o que esta acontecendo? Seu Pokemon esta brilhando!\n";
     ptrPokemon->nivel++;
 
     cout << "O Pikachu subiu de nivel!\n\n";

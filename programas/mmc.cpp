@@ -1,4 +1,4 @@
-/*jogo com x peças quadradas e y pecas triangulares. qual o maximo de participantes que pode ter para que ambos tenhama a mesma qtde de peças quadradas e trangulare?*/
+/*jogo com x peï¿½as quadradas e y pecas triangulares. qual o maximo de participantes que pode ter para que ambos tenhama a mesma qtde de peï¿½as quadradas e trangulare?*/
 #include <iostream>
 
 using namespace std;
@@ -8,9 +8,9 @@ int main(void) {
 
    cout << "\n";
    cout << "Calculo maximo de participantes do jogo.\n\n";
-   cout << "Informe o total de peças quadradas: ";
+   cout << "Informe o total de pecas quadradas: ";
    cin >> quadradas;
-   cout << "\nInforme o total de peças triangulares: ";
+   cout << "\nInforme o total de pecas triangulares: ";
    cin >> triangulares;
 
    a = quadradas;
@@ -23,7 +23,7 @@ int main(void) {
     b = r;
    } while (b != 0);
 
-   cout << "\nConsiderando " << quadradas << " peças quadradas e " << triangulares << " peças triangulares, devemos ter no máximo " << a << " participantes.";
+   cout << "\nConsiderando " << quadradas << " pecas quadradas e " << triangulares << " pecas triangulares, devemos ter no maximo " << a << " participantes.";
 
     cout << "\n\n";
     return 0;

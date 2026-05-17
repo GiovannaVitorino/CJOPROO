@@ -2,7 +2,6 @@
 #include <vector>
 //exemplo 05: estruturas aninhadas
 
-
 using namespace std;
 
 struct Pokemon {

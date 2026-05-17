@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -20,6 +21,6 @@ int main(){
 }
 
 int elevaCubo(int n){
-    return n*n*n;
+    return pow(n, 3);
 
     }

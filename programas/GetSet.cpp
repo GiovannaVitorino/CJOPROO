@@ -6,9 +6,8 @@ class GradeBook{
     public:
     void setCourseName(string name){
         courseName = name;
-    };
-
-    
+};
+  
 string getCourseName() const{
     return courseName;
 }
@@ -18,7 +17,6 @@ void displayMessage() const{
 }
 
 private:
-
 string courseName;
 };
 

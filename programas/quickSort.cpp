@@ -12,20 +12,19 @@ using namespace std;
 const int TAM = 3;
 
 // ----------------------------------------------------------------------------
-// Protótipos de função
+// Protï¿½tipos de funï¿½ï¿½o
 // ----------------------------------------------------------------------------
 void trocar(string& a, string& b);
 int particao(string dados[], int menor, int maior);
 void quickSort(string dados[], int menor, int maior);
 
 // ----------------------------------------------------------------------------
-// Função principal
+// Funï¿½ï¿½o principal
 // ----------------------------------------------------------------------------
 int main() {
-
     cout << "\nExemplo: Quick Sort\n\n";
 
-    // Variáveis
+    // Variï¿½veis
        string nomes [TAM];
 
     // Loop que realiza a entrada dos nomes
@@ -38,27 +37,24 @@ int main() {
 
     cout << "\n";
 
-    // Imprimindo os nomes antes da ordenação
-    cout << "Nomes antes da ordenação:\n\n";
+    // Imprimindo os nomes antes da ordenacao
+    cout << "Nomes antes da ordenacao:\n\n";
 
     for (int i = 0; i < TAM; i++)
     {
         cout << "Nome " << i+1 << ": " << nomes[i] << endl;
-
     }
 
     // Ordena os nomes utilizando o Quick Sort
     quickSort (nomes, 0, TAM-1);
-
     cout << "\n";
 
-    // Imprimindo os nomes depois da ordenação
-    cout << "Nomes depois da ordenação:\n\n";
+    // Imprimindo os nomes depois da ordenacao
+    cout << "Nomes depois da ordenacao:\n\n";
 
     for (int i = 0; i < TAM; i++)
     {
         cout << "Nome " << i+1 << ": " << nomes[i] << endl;
-
     }
 
     cout << "\n";
@@ -69,10 +65,10 @@ int main() {
 }
 
 // ----------------------------------------------------------------------------
-// Funções
+// Funï¿½ï¿½es
 // ----------------------------------------------------------------------------
 
-// Função para trocar o valor de duas strings
+// Funï¿½ï¿½o para trocar o valor de duas strings
 void trocar(string& a, string& b) {
     string temp = a;
     a = b;
@@ -81,8 +77,8 @@ void trocar(string& a, string& b) {
 
 // ----------------------------------------------------------------------------
 
-// Função de partição, que coloca o pivô no lugar correto e organiza os
-// elementos menores que o pivô à esquerda e os maiores à direita
+// Funï¿½ï¿½o de partiï¿½ï¿½o, que coloca o pivï¿½ no lugar correto e organiza os
+// elementos menores que o pivï¿½ ï¿½ esquerda e os maiores ï¿½ direita
 int particao(string dados[], int menor, int maior) {
     string pivo = dados[maior];
     int i = menor - 1;
@@ -102,7 +98,7 @@ int particao(string dados[], int menor, int maior) {
 
 // ----------------------------------------------------------------------------
 
-// Função Quick Sort
+// Funï¿½ï¿½o Quick Sort
 void quickSort(string dados[], int menor, int maior) {
      if (menor < maior)
     {

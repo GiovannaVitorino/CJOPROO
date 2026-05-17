@@ -4,7 +4,7 @@
 Em seguida, exiba uma grafico de barras horizontal simulando o
 histograma referente aos valores que foram informados. O programa
 deve exibir o resultado conforme o exemplo abaixo*/
-//entrada: x dados (laço para contar os dados) gravar dados em matriz
+//entrada: x dados (laï¿½o para contar os dados) gravar dados em matriz
 //processamento:
 //saida: grafico (-
 //encontrar maior valor da matriz para saber qtde de colunas
@@ -50,7 +50,6 @@ using namespace std;
     }
     cout << endl;
  }
-
 
 int main(){
     cout << "Programa grafico horizontal";
