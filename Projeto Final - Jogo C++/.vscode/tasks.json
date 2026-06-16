@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (mingw32-make)",
+            "type": "shell",
+            "command": "mingw32-make",
+            "args": ["RAYLIB_DIR=C:/raylib"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1, "line": 2, "column": 3, "severity": 4, "message": 5
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "Build (make - Linux/macOS)",
+            "type": "shell",
+            "command": "make",
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "mingw32-make clean",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "./SheetMasters.exe",
+            "dependsOn": "Build (mingw32-make)",
+            "group": "test",
+            "problemMatcher": []
+        }
+    ]
+}
+//configurations for building and running the project using mingw32-make on Windows and make on Linux/macOS. The tasks include building the project, cleaning build artifacts, and running the compiled executable. The problem matcher is set up to capture compiler warnings and errors for easier debugging.

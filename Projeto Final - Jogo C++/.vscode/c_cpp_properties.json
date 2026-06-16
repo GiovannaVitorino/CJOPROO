@@ -1,0 +1,47 @@
+{
+    "configurations": [
+        {
+            "name": "Windows (MinGW)",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/**",
+                "C:/raylib/raylib/src",
+                "C:/raylib/w64devkit/include"
+            ],
+            "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+            "compilerPath": "C:/raylib/w64devkit/bin/g++.exe",
+            "compilerArgs": [
+                "-BC:/raylib/w64devkit/bin/"
+            ],
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/include",
+                    "C:/raylib/raylib/src",
+                    "C:/raylib/w64devkit/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/raylib_local/include",
+                "/usr/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
+
+/*Esse arquivo não compila o projeto diretamente. Ele configura 
+o ambiente de edição do VS Code para que a extensão C/C++ entenda 
+onde estão os headers, qual compilador usar e como analisar o 
+código do seu projeto.
+*/
